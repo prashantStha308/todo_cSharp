@@ -12,14 +12,14 @@ namespace TodoNamespace
         {
             this.Name = name;
             this.IsCompleted = false;
-            this.TrackId = ++count;
+            this.TaskId = ++count;
         }
 
         public Task() { }
 
         public string Name { get; set; }
         public bool IsCompleted { get; set; }
-        public int TrackId { get; set; }
+        public int TaskId { get; set; }
 
         public void ToggleCompleteStatus()
         {
